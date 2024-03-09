@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'django.contrib.humanize',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'F6CcFd16bEFfE5DaEDbFBbG4-*fD-BA3',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '32951'
     }
 }
 
